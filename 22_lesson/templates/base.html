@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+<style>
+    html{
+        background-color: rgb(140, 113, 192);
+    }
+    button{
+        background-color: rgb(195, 175, 209);
+    }
+</style>
+<body>
+{% block content %}
+
+<h1>Добро пожаловать на страницу в оттенках фиолетового!</h1>
+<p><i><b>Вы ведь не думали найти тут что-либо адекватное?</b></i></p>
+
+<button><a href="/listofsomething">Произвольный список</a></button>
+<button><a href="/portfolio">Контакты</a></button>
+<button><a href="/warning">НЕ НАЖИМАТЬ!</a></button>
+
+{% endblock %}
+
+</body>
+</html>
